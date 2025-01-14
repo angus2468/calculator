@@ -25,7 +25,6 @@ buttonNum1.addEventListener("click", function () {
   display.innerHTML = displayNumber + "1";
   displayNumber = displayNumber + "1";
 });
-
 buttonNum2.addEventListener("click", function () {
   display.innerHTML = displayNumber + "2";
   displayNumber = displayNumber + "2";
@@ -89,11 +88,15 @@ buttonMultiply.addEventListener("click", function () {
 buttonEquals.addEventListener("click", function () {
   if (operation === "+") {
     display.innerHTML = +number1 + +displayNumber;
+    displayNumber = "";
   } else if (operation === "-") {
     display.innerHTML = +number1 - +displayNumber;
+    displayNumber = "";
   } else if (operation === "/") {
     display.innerHTML = +number1 / +displayNumber;
+    displayNumber = "";
   } else if (operation === "*") {
     display.innerHTML = +number1 * +displayNumber;
+    displayNumber = "";
   }
 });
