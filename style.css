@@ -5,9 +5,12 @@
   align-content: center;
   text-align: center;
   border-radius: 3px;
+  text-decoration: none;
+  color: black;
 }
 .button:hover {
   background-color: rgb(248, 189, 207);
+  cursor: pointer;
 }
 .wholeCalculator {
   display: flex;
